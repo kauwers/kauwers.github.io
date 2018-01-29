@@ -1,2 +1,0 @@
-# kristineauwers.com
-Public site
