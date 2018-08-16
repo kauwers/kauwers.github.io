@@ -75,6 +75,10 @@ section.pfblock {
   padding-bottom: 3em;
 }
 
+.pfblock-subtitle {
+  font-size: 1.2em;
+}
+
 
 /*End sticky footer*/
 
@@ -117,6 +121,7 @@ section.pfblock {
   padding: .5em 0;
 }
 
+
 #resume .subpage-content h3, h4, h5, h6 {
   padding: .5em 0 0 0;
 }
@@ -128,11 +133,15 @@ section.pfblock {
 #resume .subpage-content h1, h2, li {
   padding: 0 0 .5em 0;
 }
-#resume h4, h5{
+/*#resume h3, h4{
   text-transform: none;
-}
+}*/
 #resume h5 {
   font-weight: 500;
+}
+
+#resume p, li {
+  font-size: .9em;
 }
 /* Front page layout spacing */
 
@@ -246,6 +255,7 @@ section.pfblock {
 }
 
 
+
 /*End Sliding section subheader text styling*/
 
 
@@ -281,9 +291,7 @@ figure.effect-bubba p {
 }
 
 @media (min-width: 362px) {
-  .pfblock .subpage-content {
-    font-size: .9em;
-  }
+
   .subpage-content img {
     padding: .7em 0;
   }
@@ -317,12 +325,7 @@ figure.effect-bubba p {
 }
 
 @media (min-width: 992px) {
-  .pfblock .subpage-content {
-    font-size: 1.2em;
-  }
-  .pfblock-subtitle {
-    font-size: 1.5em;
-  }
+
   #portfolio-grid, #subpage-document-content {
     width: 70%;
     display: block;
