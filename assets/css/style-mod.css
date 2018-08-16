@@ -1,0 +1,405 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/* Video embeds */
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  max-width: 75px;
+  display: block;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.iconcaption {
+  width: 90%;
+  padding-left: 5%;
+  display: block;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.iconrow {
+  width: 80%;
+  float: left;
+  display: table;
+}
+
+.under-caption {
+  width: 90%;
+  margin: 0;
+  padding-top: 5%;
+  display: block;
+  text-align: center;
+}
+
+
+/*Sticky footer*/
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -10em;
+}
+
+#footer, .push {
+  height: 10em;
+}
+
+
+/*Page spacing override*/
+
+section.pfblock {
+  padding-bottom: 3em;
+}
+
+
+/*End sticky footer*/
+
+
+/*Bootstrap override*/
+
+#portfolio-grid>#portfolio-grid>.col-sm-1, #portfolio-grid>.col-sm-10, #portfolio-grid>.col-sm-11, #portfolio-grid>.col-sm-12, #portfolio-grid>.col-sm-2, #portfolio-grid>.col-sm-3, #portfolio-grid>.col-sm-4, #portfolio-grid>.col-sm-5, #portfolio-grid>.col-sm-6, #portfolio-grid>.col-sm-7, #portfolio-grid>.col-sm-8, #portfolio-grid>.col-sm-9, #portfolio-grid>.col-xs-1, #portfolio-grid>.col-xs-10, #portfolio-grid>.col-xs-11, #portfolio-grid>.col-xs-12, #portfolio-grid>.col-xs-2, #portfolio-grid>.col-xs-3, #portfolio-grid>.col-xs-4, #portfolio-grid>.col-xs-5, #portfolio-grid>.col-xs-6, #portfolio-grid>.col-xs-7, #portfolio-grid>.col-xs-8, #portfolio-grid>.col-xs-9 {
+  padding: 0em .4em .4em 0em;
+}
+
+
+/*#resume > .container > .row > .col-xs-12, #resume > .container > .row > .col-md-9 {
+	padding-left: .4em;
+	padding-right: .4em;
+}*/
+
+.portfolio-nav p {
+  font-size: .9em;
+}
+
+@media (max-width: 768px) {
+  .row {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .row {
+    margin-left: 0;
+  }
+}
+
+
+/*End bootstrap override*/
+
+
+/* subpage formatting */
+
+.subpage-content h1, h2, h3, h4, h5, h6, p {
+  padding: .5em 0;
+}
+
+#resume .subpage-content h3, h4, h5, h6 {
+  padding: .5em 0 0 0;
+}
+
+#resume .subpage-content p {
+  padding: 0;
+}
+
+#resume .subpage-content h1, h2, li {
+  padding: 0 0 .5em 0;
+}
+
+
+/* Front page layout spacing */
+
+.start {
+  width: 95%;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .start {
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .start {
+    width: 50%;
+  }
+}
+
+
+/* End front page layout spacing */
+
+
+/* Main navigation image scaling and formatting */
+
+.navbar {
+  vertical-align: middle;
+}
+
+.nav-header {
+  float: left;
+}
+
+.nav-header img {
+  display: block;
+  vertical-align: middle;
+}
+
+.navbar {
+  vertical-align: middle;
+}
+
+.nav-header-xsmall img, .nav-header-xxsmall img {
+  display: none;
+}
+
+@media (max-width: 360px) {
+  .nav-header-xxsmall img {
+    display: block;
+    height: 34px;
+    vertical-align: middle;
+  }
+  .nav-header-xxsmall {
+    float: left;
+    display: block;
+    margin-top: .55em;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width:361px) and (max-width:768px) {
+  .nav-header-xsmall img {
+    display: block;
+    height: 34px;
+    vertical-align: middle;
+  }
+  .nav-header-xsmall {
+    float: left;
+    display: block;
+    margin-top: .55em;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-header img {
+    height: 2.33em;
+  }
+  #portfolio-grid {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar ul {
+    padding-top: 0em;
+  }
+  .nav-header img {
+    height: 2.8em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar ul {
+    padding-top: 0em;
+  }
+  .nav-header img {
+    height: 3.2em;
+  }
+}
+
+
+/* End main navigation image scaling */
+
+
+/*Portfolio section subheader text spacing*/
+
+#portfolio .pfblock-title, #about h1, #resume h1 {
+  padding-top: 60px;
+}
+
+
+/*End Sliding section subheader text styling*/
+
+
+/* Portfolio grid  styling */
+
+.view-project {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.grid a {
+  color: #FFF;
+}
+
+.grid p {
+  font-weight: 500;
+}
+
+figure.effect-bubba p {
+  padding: .1em 1em;
+}
+
+@media (max-width:767px) {
+  .grid figure p {
+    font-size: 1em;
+  }
+  .grid figure h2 {
+    font-size: 1.2em;
+  }
+  .view-project {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 362px) {
+  .pfblock .subpage-content {
+    font-size: .9em;
+  }
+  .subpage-content img {
+    padding: .7em 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .grid figure p {
+    font-size: 1em;
+  }
+  .grid figure h2 {
+    font-size: 1.2em;
+  }
+  .view-project {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 992px)
+/* and (max-width: 1199px) */
+
+{
+  .grid figure p {
+    font-size: .8em;
+  }
+  .grid figure h2 {
+    font-size: .9em;
+  }
+  .view-project {
+    font-size: .9em;
+  }
+}
+
+@media (min-width: 992px) {
+  .pfblock .subpage-content {
+    font-size: 1.2em;
+  }
+  .pfblock-subtitle {
+    font-size: 1.5em;
+  }
+  #portfolio-grid, #subpage-document-content {
+    width: 70%;
+    display: block;
+    float: left;
+  }
+  .grid figure {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  #portfolio-grid, .subpage-document-content {
+    width: 72%;
+  }
+  .grid figure p {
+    font-size: .8em;
+  }
+  .grid figure h2 {
+    font-size: .9em;
+  }
+  .view-project {
+    font-size: .9em;
+  }
+}
+
+*/
+/* End grid  styling */
+
+
+/* Portfolio navigation and subpage section text styling*/
+
+.subpage-document-blurb p {
+  font-weight: 300;
+  font-size: 1em;
+}
+
+@media (max-width:362px) {
+  .portfolio-nav p {
+    font-size: .9em;
+  }
+}
+
+@media (min-width:362px) {
+  .subpage-document-blurb p {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width:767px) {
+  .subpage-content {
+    padding: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .pfblock-title, .pfblock-subtitle {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .subpage-document-blurb, .portfolio-nav {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .portfolio-nav, .subpage-document-blurb {
+    width: 30%;
+  }
+  .portfolio-nav {
+    padding-top: .8em;
+  }
+  .portfolio-nav p {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio-nav, .subpage-document-blurb {
+    width: 292px;
+  }
+}
+
+
+/* End front page layout */

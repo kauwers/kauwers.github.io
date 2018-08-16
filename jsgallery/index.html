@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Gallery</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<script type="text/javascript">
+
+
+function timeBasedGreeting() {
+		
+		var currentTimecode = new Date();
+		var currentTime = currentTimecode.getHours();
+
+	 	if (currentTime<13) {
+				document.getElementById("greeting").innerHTML = "Good Morning!";
+		}
+		else if (currentTime<18 && currentTime>=13){
+			document.getElementById("greeting").innerHTML = "Good Afternoon!";
+		}
+		else {
+				document.getElementById("greeting").innerHTML = "Good Evening!";
+		}
+	
+
+
+	}
+
+
+function changeImage(sentObject) {
+	var imageSRC = sentObject.getAttribute('src');
+	var imageALT = sentObject.getAttribute('alt');
+
+	viewer.style.backgroundImage = "url('"+imageSRC+"')";
+	document.getElementById("viewertext").innerHTML = imageALT;
+
+	}
+
+function resetViewer() {
+	document.getElementById("viewertext").innerHTML = "Viewer";
+	viewer.style.backgroundImage = "none";
+
+}
+
+</script>
+
+</head>
+<body onload="timeBasedGreeting()">
+	<div id="container">
+		<h1  id="greeting">JavaScript image gallery</h1>
+		<div id="viewer">
+			<h2 id="viewertext">Viewer</h2>
+		</div>
+		<div id="thumbnails">
+			<h2> Thumbnails</h2>
+			<img onMouseOver=changeImage(this) name="image1" onMouseOut=resetViewer() src="images/bay.jpg"  alt="Walking across the bay">
+			<img onMouseOver=changeImage(this) name="image2" onMouseOut=resetViewer() src="images/cake.jpg" alt="Wedding cake">
+			<img onMouseOver=changeImage(this) name="image3" onMouseOut=resetViewer() src="images/climb.jpg" alt="Climbing in West Virginia">
+			<img onMouseOver=changeImage(this) name="image4" onMouseOut=resetViewer() src="images/hoop.jpg" alt="Hula hooper wearing combat boots">			
+			<img onMouseOver=changeImage(this) name="image5" onMouseOut=resetViewer() src="images/kayak.jpg" alt="Kayaking in downtown Detroit">
+			<img onMouseOver=changeImage(this) name="image6" onMouseOut=resetViewer() src="images/overhang.jpg" alt="Overhung rock climbing route in West Virginia">
+			<img onMouseOver=changeImage(this) name="image7" onMouseOut=resetViewer() src="images/sunset.jpg" alt="Sunset near Cheboygan Michigan">
+			<img onMouseOver=changeImage(this) name="image8" onMouseOut=resetViewer() src="images/tattoo.jpg" alt="Cliff jumper with tattoo">
+			<img onMouseOver=changeImage(this) name="image9" onMouseOut=resetViewer() src="images/up.jpg" alt="Climber in West Virginia">
+		</div>
+	</div>
+
+
+</body>

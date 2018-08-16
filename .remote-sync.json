@@ -1,0 +1,16 @@
+{
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "kristine.wwwss22.a2hosted.com",
+  "port": "7822",
+  "target": "public_html/",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "kristine",
+  "watch": [],
+  "transport": "scp",
+  "password": "bringmyshuttle0"
+}
