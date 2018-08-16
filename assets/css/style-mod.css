@@ -128,8 +128,12 @@ section.pfblock {
 #resume .subpage-content h1, h2, li {
   padding: 0 0 .5em 0;
 }
-
-
+#resume h4, h5{
+  text-transform: none;
+}
+#resume h5 {
+  font-weight: 500;
+}
 /* Front page layout spacing */
 
 .start {
